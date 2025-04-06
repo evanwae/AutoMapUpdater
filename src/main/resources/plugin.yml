@@ -1,0 +1,8 @@
+name: AutoMapUpdater
+version: 1.0
+main: evanwae.automapupdater.AutoMapUpdater
+api-version: 1.21
+commands:
+  updatemaps:
+    description: Updates maps in item frames.
+    usage: /updatemaps [<radius>|reload|info|setdefault <radius>]
