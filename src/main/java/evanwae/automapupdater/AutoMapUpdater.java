@@ -1,13 +1,19 @@
 package evanwae.automapupdater;
 
-/**
- * Hello world!
- *
- */
-public class AutoMapUpdater
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class AutoMapUpdater extends JavaPlugin {
+
+    @Override
+    public void onEnable() {
+        // Called when your plugin is enabled
+        getLogger().info("AutoMapUpdater has been enabled!");
+        // You can register commands, events, etc. here
+    }
+
+    @Override
+    public void onDisable() {
+        // Called when your plugin is disabled
+        getLogger().info("AutoMapUpdater has been disabled.");
     }
 }
